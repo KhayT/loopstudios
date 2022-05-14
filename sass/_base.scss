@@ -1,0 +1,49 @@
+$primary-font: "Alata", sans-serif;
+$secondary-font: "Josefin Sans", sans-serif;
+
+$white: hsl(0, 0%, 100%);
+$black: hsl(0, 0%, 0%);
+$dark-gray: hsl(0, 0%, 55%);
+$very-dark-gray: hsl(0, 0%, 41%);
+
+@mixin paddingOnHover {
+  content: "";
+  background-color: #fff;
+  height: 2px;
+  width: 50%;
+  border-radius: 1px;
+  position: absolute;
+  top: 1.5rem;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+  margin: 0 auto;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+
+  @media only screen and (min-width: 1200px) {
+    font-size: 150%;
+  }
+}
+
+body {
+  font-size: 1rem;
+}
+
+.heading--1 {
+  font-family: $secondary-font;
+  text-transform: uppercase;
+  color: $black;
+  font-weight: 400;
+}
